@@ -1,6 +1,12 @@
 import GameList from '../components/GameList';
 import { screen, render } from '@testing-library/react';
 
+global.IntersectionObserver = jest.fn(() => {
+  return {
+    observe: jest.fn(),
+  };
+});
+
 beforeEach(() => {
   const list = [{ genre: 'genero1' }, { genre: 'genero2' }, { genre: 'genero3' }];
   render(<GameList list={list} />);

@@ -2,7 +2,7 @@ export default function GameItem({ title, thumbnail, description, platform, genr
   return (
     <a
       aria-label='game-item'
-      className='w-full max-w-xs p-4 rounded-lg bg-gray-900 text-white cursor-pointer hover:bg-gray-600 transition-colors block'
+      className='w-full max-w-xs p-4 rounded-lg bg-gray-900 text-white cursor-pointer hover:bg-gray-600 transition-colors block game-item min-h-[350px]'
       href={gameUrl}
       target='_blank'
     >

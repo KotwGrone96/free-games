@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --base=/free-games/",
+    "dev": "vite --base=/free-games/ --host 192.168.1.42 --open",
     "build": "vite build --base=/free-games/",
     "preview": "vite preview",
     "test": "jest --watchAll"

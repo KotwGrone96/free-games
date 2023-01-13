@@ -26,6 +26,12 @@ global.fetch = jest.fn(() =>
   })
 );
 
+global.IntersectionObserver = jest.fn(() => {
+  return {
+    observe: jest.fn(),
+  };
+});
+
 describe('La aplicación debe renderizar correctamente', () => {
   test('Componente App debería renderizarse', async () => {
     await act(async () => render(<App />));
