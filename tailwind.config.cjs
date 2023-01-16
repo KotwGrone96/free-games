@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        game: "url('./src/assets/bg.jpg')",
+      },
+    },
   },
   plugins: [],
 };

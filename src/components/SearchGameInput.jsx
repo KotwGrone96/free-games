@@ -22,7 +22,7 @@ export default function SearchGameInput({ list = [] }) {
         placeholder='Escriba el nombre del juego'
         onChange={handleChange}
         value={inputVal}
-        className='w-full text-white m-auto max-w-lg p-2 rounded-lg mb-6 outline-none bg-gray-900 placeholder:text-gray-400 block'
+        className='w-full text-white m-auto max-w-lg p-2 rounded-lg mb-6 outline-none bg-gray-700 placeholder:text-gray-400 block'
       />
 
       <ul
